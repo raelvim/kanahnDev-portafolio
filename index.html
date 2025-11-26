@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" type="image/png" href="images/kdev_favicon.png?v=1" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img
+          src="images/kanahnDev-logo.png"
+          alt="kanahnDev Logo"
+          class="logo-img"
+        />
+      </div>
+      <div class="menu">
+        <!-- Enlaces apuntando a los IDs -->
+        <a href="#home">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+      </div>
+      <!-- Botón de contacto apuntando al footer -->
+      <a href="#contacto" class="btn-contact">Hablemos</a>
+    </nav>
+
+    <!-- Banner Black Friday -->
+    <div class="promo-banner">
+      <div class="promo-content">
+        <span class="promo-badge">BLACK FRIDAY</span>
+        <span class="promo-text"
+          >30% OFF en todos los servicios - Válido hasta
+          <strong>30 de Noviembre</strong></span
+        >
+        <span
+          class="promo-close"
+          onclick="this.parentElement.parentElement.style.display='none'"
+          >×</span
+        >
+      </div>
+    </div>
+
+    <!-- Hero Section (ID: home) -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>
+            Convierte tu idea en una <span class="text-gradient">Web Real</span>
+          </h1>
+          <p class="hero-subtitle">
+            Desarrollo web profesional con diseño de alto impacto.
+          </p>
+          <div class="hero-buttons">
+            <!-- Botones funcionales -->
+            <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+            <a href="#servicios" class="btn-secondary">Saber más</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glowing-orb"></div>
+          <img
+            src="images/seccion_hero.png"
+            alt="Ilustración Hero"
+            class="hero-img floating-anim"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos (ID: proyectos) -->
+    <section id="proyectos" class="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <h2>Proyectos Recientes</h2>
+          <p>Explora mis últimos trabajos de desarrollo.</p>
+        </div>
+        <div class="grid-proyectos">
+          <!-- Tarjeta 1 - Proyecto AirBnb -->
+          <div class="proyecto-card">
+            <div class="proyecto-img-container">
+              <img
+                src="images/proyecto1.png"
+                alt="Lakeside Serenity - AirBnb"
+                class="proyecto-img-real"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Lakeside Serenity</h3>
+              <p>
+                Sitio web para un AirBnb, con reseñas enlazadas en tiempo real y
+                con su galería de imágenes.
+              </p>
+              <a
+                href="https://escapelakenorman.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-ver"
+                >Ver Proyecto &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 - CV Online -->
+          <div class="proyecto-card">
+            <div class="proyecto-img-container">
+              <img
+                src="images/proyecto2.png"
+                alt="CV Online Interactivo"
+                class="proyecto-img-real"
+              />
+            </div>
+            <div class="card-content">
+              <h3>CV Online Interactivo</h3>
+              <p>
+                Currículum digital moderno con diseño responsive, animaciones
+                suaves y secciones interactivas.
+              </p>
+              <a
+                href="https://warm-griffin-edf2da.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-ver"
+              >
+                Ver CV Online &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 - Este Portafolio -->
+          <div class="proyecto-card">
+            <div class="proyecto-img-container">
+              <img
+                src="images/proyecto3.png"
+                alt="Portafolio Personal"
+                class="proyecto-img-real"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Portafolio Profesional</h3>
+              <p>
+                Diseño moderno con efectos glassmorphism, optimización SEO y
+                diseño 100% responsive.
+              </p>
+              <a href="#contacto" class="link-ver"> Trabajar Juntos &rarr; </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios (ID: servicios) -->
+    <section id="servicios" class="servicios">
+      <div class="container">
+        <div class="section-header">
+          <h2>Servicios y Precios</h2>
+        </div>
+
+        <div class="servicios-grid-layout">
+          <div class="servicio-item glass-panel">
+            <!-- AGREGA ESTA LÍNEA -->
+            <div class="discount-badge">30% OFF</div>
+
+            <div class="servicio-header">
+              <h3>Landing Page Básica</h3>
+              <!-- CAMBIA esto -->
+              <div class="pricing">
+                <span class="old-price">$97</span>
+                <p class="precio">$68</p>
+              </div>
+              <!-- POR esto -->
+            </div>
+            <ul>
+              <li>1 página principal optimizada</li>
+              <li>Diseño 100% responsive</li>
+              <li>Formulario de contacto integrado</li>
+              <li>Optimización SEO básica</li>
+              <li>Entrega en 5-7 días</li>
+            </ul>
+            <a
+              href="mailto:raelvijmendoza@gmail.com?subject=Solicitud: Landing Page Básica - $68&body=Hola, estoy interesado/a en el servicio de Landing Page Básica. Por favor contáctame para coordinar los detalles."
+              class="btn-servicio btn-outline"
+            >
+              Solicitar este servicio
+            </a>
+          </div>
+
+          <div class="servicio-item glass-panel highlight">
+            <!-- AGREGA ESTA LÍNEA -->
+            <div class="discount-badge">30% OFF</div>
+
+            <div class="servicio-header">
+              <h3>Sitio Multi-página</h3>
+              <!-- CAMBIA esto -->
+              <div class="pricing">
+                <span class="old-price">$150</span>
+                <p class="precio">$105</p>
+              </div>
+              <!-- POR esto -->
+            </div>
+            <ul>
+              <li>Hasta 5 páginas interconectadas</li>
+              <li>Diseño consistente y profesional</li>
+              <li>Navegación completa</li>
+              <li>Optimización SEO avanzada</li>
+              <li>Entrega en 7-10 días</li>
+            </ul>
+            <a
+              href="mailto:raelvijmendoza@gmail.com?subject=Solicitud: Sitio Multi-página - $105&body=Hola, estoy interesado/a en el servicio de Sitio Multi-página. Por favor contáctame para coordinar los detalles."
+              class="btn-servicio btn-green"
+            >
+              Solicitar este servicio
+            </a>
+          </div>
+        </div>
+
+        <div class="proceso-trabajo">
+          <h3>Proceso de Trabajo</h3>
+          <div class="pasos">
+            <div class="paso">
+              <span class="numero">01</span>
+              <h4>Consulta</h4>
+              <p>Definición de proyecto</p>
+            </div>
+            <div class="paso">
+              <span class="numero">02</span>
+              <h4>Propuesta</h4>
+              <p>Timeline y costos</p>
+            </div>
+            <div class="paso">
+              <span class="numero">03</span>
+              <h4>Desarrollo</h4>
+              <p>Código y revisiones</p>
+            </div>
+            <div class="paso">
+              <span class="numero">04</span>
+              <h4>Entrega</h4>
+              <p>Lanzamiento final</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contacto (ID: contacto) -->
+    <footer id="contacto">
+      <div class="container">
+        <h2>¿Listo para empezar?</h2>
+        <p>Envíame un correo y hablemos de tu idea.</p>
+        <a href="mailto:tuemail@ejemplo.com" class="btn-primary"
+          >Enviar Correo</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
